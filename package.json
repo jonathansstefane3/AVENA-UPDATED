@@ -1,0 +1,14 @@
+{
+  "name": "avena-restaurant",
+  "version": "1.2.0",
+  "description": "Website for AVENA, a grain-led restaurant. Vanilla JavaScript front end with a dependency-free Node server.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" },
+  "keywords": ["restaurant", "website", "javascript", "node"],
+  "license": "MIT"
+}

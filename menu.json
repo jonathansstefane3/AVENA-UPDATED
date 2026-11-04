@@ -1,0 +1,30 @@
+{
+  "currency": "$",
+  "categories": [
+    { "id": "starters", "name": "Starters", "items": [
+      { "name": "Toasted oat broth", "desc": "Roasted oat milk, miso, chive oil, crisp oat clusters.", "price": 9, "tags": ["vegan"] },
+      { "name": "Charred leek and barley", "desc": "Pearl barley, whipped goat cheese, hazelnut, sherry vinegar.", "price": 11, "tags": ["vegetarian"] },
+      { "name": "Cured trout on rye", "desc": "House rye, dill cream, pickled shallot, trout roe.", "price": 13, "tags": [] }
+    ]},
+    { "id": "mains", "name": "Mains", "items": [
+      { "name": "Oat risotto", "desc": "Steel-cut oats cooked like risotto, wild mushrooms, aged cheddar.", "price": 19, "tags": ["vegetarian"] },
+      { "name": "Roast chicken with farro", "desc": "Half chicken, farro, roasted carrots, salsa verde.", "price": 24, "tags": [] },
+      { "name": "Spelt tagliatelle", "desc": "Fresh spelt pasta, brown butter, sage, toasted walnut.", "price": 18, "tags": ["vegetarian"] },
+      { "name": "Grilled sea bass", "desc": "Buckwheat, fennel, charred lemon, caper butter.", "price": 27, "tags": [] }
+    ]},
+    { "id": "sides", "name": "Grains and sides", "items": [
+      { "name": "Millet with herbs", "desc": "Toasted millet, parsley, mint, lemon.", "price": 6, "tags": ["vegan"] },
+      { "name": "Smashed potatoes", "desc": "Rosemary salt and garlic oil.", "price": 6, "tags": ["vegan"] },
+      { "name": "Oat bread and butter", "desc": "Baked every morning. Cultured butter.", "price": 5, "tags": ["vegetarian"] }
+    ]},
+    { "id": "desserts", "name": "Desserts", "items": [
+      { "name": "Oat and honey pudding", "desc": "Baked oat custard, wild honey, toasted seeds.", "price": 8, "tags": ["vegetarian"] },
+      { "name": "Dark chocolate and rye", "desc": "Rye crumble, chocolate cremeux, sea salt.", "price": 9, "tags": ["vegetarian"] }
+    ]},
+    { "id": "drinks", "name": "Drinks", "items": [
+      { "name": "House oat latte", "desc": "Espresso with our own oat milk.", "price": 4, "tags": ["vegan"] },
+      { "name": "Barley tea", "desc": "Served hot or over ice.", "price": 3, "tags": ["vegan"] },
+      { "name": "Ginger and lime soda", "desc": "Pressed ginger, lime, sparkling water.", "price": 4, "tags": ["vegan"] }
+    ]}
+  ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AVENA | Grain-led restaurant</title>
+  <meta name="description" content="AVENA cooks with oats, barley, spelt and other whole grains. View the menu and book a table.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌾%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="AVENA home">AVENA</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="about.html">Our story</a>
+      <a href="index.html#menu">Menu</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn small" href="index.html#reserve">Book a table</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <svg class="stalk" viewBox="0 0 200 520" aria-hidden="true">
+        <path d="M100 520 C100 400 96 260 100 40" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <g fill="currentColor" id="grains"></g>
+      </svg>
+      <div class="hero-copy">
+        <h1 aria-label="AVENA"><span>A</span><span>V</span><span>E</span><span>N</span><span>A</span></h1>
+        <p class="lede">Avena is the Latin name for oats. We cook with oats, barley, spelt and millet, milled and baked in house every morning.</p>
+        <div class="actions">
+          <a class="btn" href="#reserve">Book a table</a>
+          <a class="btn ghost" href="#menu">See the menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about">
+      <h2>A kitchen built around the grain</h2>
+      <div class="cols">
+        <p>Most restaurants treat grains as a side dish. At AVENA they set the direction of the whole menu. We toast, ferment and slow-cook them until each one tastes like itself.</p>
+        <p>We buy from small farms, mill our own flour and bake bread at dawn. <a href="about.html">Read our story</a>.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <h2>From field to table</h2>
+      <ul class="photos" id="gallery-list"></ul>
+    </section>
+
+    <section id="menu" class="section menu">
+      <h2>Menu</h2>
+      <div class="menu-tools">
+        <label class="sr">Search the menu<input type="search" id="menu-search" placeholder="Search dishes" autocomplete="off"></label>
+        <div class="chips" role="group" aria-label="Dietary filters">
+          <button type="button" aria-pressed="false" data-tag="vegan">Vegan</button>
+          <button type="button" aria-pressed="false" data-tag="vegetarian">Vegetarian</button>
+        </div>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Menu categories"></div>
+      <ul class="dishes" id="dishes" aria-live="polite"></ul>
+      <p class="note">Tell your server about allergies. Dishes marked vegan contain no animal products.</p>
+    </section>
+
+    <section id="reserve" class="section reserve">
+      <h2>Book a table</h2>
+      <form id="reserve-form" novalidate>
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Date<input name="date" type="date" required></label>
+        <label>Time<input name="time" type="time" min="10:00" max="21:30" step="900" required></label>
+        <label>Guests<input name="guests" type="number" min="1" max="12" value="2" required></label>
+        <label class="wide">Notes (allergies, occasion)<textarea name="notes" rows="3" maxlength="500"></textarea></label>
+        <button class="btn wide" type="submit">Request booking</button>
+        <p id="form-status" class="status wide" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>12 Mill Lane, Your City &middot; <a href="tel:+10000000000">+1 000 000 0000</a> &middot; <a href="mailto:hello@avena.example">hello@avena.example</a></p>
+    <p>&copy; <span id="year"></span> AVENA. All rights reserved.</p>
+  </footer>
+
+  <script src="js/hours.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/extras.js"></script>
+</body>
+</html>
